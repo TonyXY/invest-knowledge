@@ -22,7 +22,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '📖 养家心法', link: '/yangjia/' },
-      { text: '🧠 交易心理', link: '/psychology/' }
+      { text: '🧠 交易心理', link: '/psychology/' },
+      { text: '📊 技术分析', link: '/technical/' }
     ],
 
     sidebar: {
@@ -65,6 +66,23 @@ export default defineConfig({
         }
       ]
     },
+
+      '/technical/': [
+        {
+          text: '📊 技术分析基础',
+          items: [
+            { text: '模块概览', link: '/technical/' },
+            { text: '01 · K线基础', link: '/technical/01-candle-basics' },
+            { text: '02 · K线组合', link: '/technical/02-candle-patterns' },
+            { text: '03 · 量价关系', link: '/technical/03-volume-price' },
+            { text: '04 · 趋势判断', link: '/technical/04-trend-analysis' },
+            { text: '05 · 支撑与阻力', link: '/technical/05-support-resistance' },
+            { text: '06 · 均线系统', link: '/technical/06-moving-averages' },
+            { text: '07 · 常见技术形态', link: '/technical/07-chart-patterns' },
+            { text: '08 · 核心原则', link: '/technical/08-core-principles' }
+          ]
+        }
+      ],
 
     outline: [2, 4],
 
